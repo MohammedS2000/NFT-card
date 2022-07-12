@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit" />
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,10 +18,10 @@
         background-color: #14253d;
         height: 400px;
         justify-content: center;
-        padding: 70px;
+        padding: 100px;
         margin: auto;
         max-width: 1440px;
-        width: 200px;
+        width: 150px;
         display: flex;
         border-radius: 20px;
         position: absolute;
@@ -29,10 +29,13 @@
         bottom: 0;
         left: 0;
         right: 0;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
     }
     .title{
-      font-family: "Outfit", sans-serif;
+      font-family: "Outfit" , sans-serif;
       color: white;
+      font-size: 22px;
+      
     }
     .desc{
       font-size: 18px;
@@ -49,6 +52,7 @@
       background-image: url(images/icon-view.svg);
       background-repeat: no-repeat;
       background-position: 130px;
+      border-radius: 10px;
     }
     img {
       border-radius: 10px;
@@ -63,7 +67,7 @@
         border-radius: 1px;
         border-style: solid;
         border-width: 30%;
-        border-color: #8bacda;
+        border-color: #6d83a3;
         border-top-style: none;
         border-right-style: none;
         border-left-style: none;
@@ -71,6 +75,11 @@
     .span2:hover{
       color: cyan;
       cursor: pointer;
+    }
+    span{
+      font-family: "Outfit",sans-serif;
+      font-size: 18px;
+  
     }
     .span1{
       color: #6d83a3;
@@ -80,14 +89,26 @@
     }
     .eth {
         color: #00fff7;
+        font-family: "Outfit",sans-serif;
+        font-size: 18px;
+        margin-right: 90px;
       }
       .time {
         color: #8bacda;
+        font-family: "Outfit",sans-serif;
+        font-size: 18px;
+        
       }
       .avatar {
         border-style: solid, 50px;
         border-radius: 25px;
+        border-width: 20%;
         border-color: white;
+        float: left;
+        margin-right: 15px;
+      }
+      .creator{
+        margin-top: 20px;
       }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -101,7 +122,7 @@
 
       <div class="view-contain">
     </div>
-    <img class="equ" width="240" src="images/image-equilibrium.jpg" alt="equilibrium"/>
+    <img class="equ" width="300" src="images/image-equilibrium.jpg" alt="equilibrium"/>
   <p class="title">Equilibrium #3429</p>
 
   <p class="desc"> Our Equilibrium collection promotes balance and calm. </p>
@@ -109,16 +130,16 @@
   
   
   <div class="eth-time-contai">
-  <p class="eth"> <img src="images/icon-ethereum.svg" alt="ethereum icon"/>
-     0.041 ETH </p>
-  <p class="time"> <img src="images/icon-clock.svg" alt="clock icon"/>   
-  3 days left</p>
+  <p > <img src="images/icon-ethereum.svg" alt="ethereum icon"/>
+     <span class=eth>0.041 ETH </span>
+    <img src="images/icon-clock.svg" alt="clock icon"/>   
+ <span class="time"> 3 days left</span></p>
 </div>
   
 <hr/>
 <div class="creator">
     <div class="creator-icon">
-      <img width="40x40" class="avatar" src="images/image-avatar.png" alt="avatar"/>
+      <img width="30x30" class="avatar" src="images/image-avatar.png" alt="avatar"/>
     </div>
   <span class="span1"> Creation of </span><span class="span2"> Jules Wyvern </span>
   </div>
